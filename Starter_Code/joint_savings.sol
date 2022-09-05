@@ -55,7 +55,7 @@ contract JointSavings {
         if (lastToWithdraw != recipient) {lastToWithdraw = recipient;}
 
         // Call the `transfer` function of the `recipient` and pass it the `amount` to transfer as an argument.
-        return recipient.transfer(amount);
+        recipient.transfer(amount);
 
         // Set  `lastWithdrawAmount` equal to `amount`
         lastWithdrawAmount = amount;
